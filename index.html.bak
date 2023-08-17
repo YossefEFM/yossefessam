@@ -4,21 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="I:\Portfolio\sources\styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+6ay1Q2t/lom7S461j2Av5Y+3A2yj4ImFedn2PVEQXz7j5" crossorigin="anonymous">
   <title>Yossef Essam Fouad - Portfolio</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-    <div class="container">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#certificates"><i class="fas fa-certificate"></i> Certificates</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-      </ul>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+      <li><a href="#projects"><i class="fas fa-certificate"></i> Certificates</a></li>
+      <li><a href="#home"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
   </nav>
 
   <section id="home" class="section bg-image text-white py-5">
@@ -28,8 +26,8 @@
           <h2>Welcome to My Portfolio</h2>
           <p>I'm Yossef Essam Fouad, a bioinformatics graduate passionate about AI, machine learning, and data science.</p>
           <div class="contact-icons">
-            <a href="mailto:youssefessam1269@gmail.com"><img src="Email.png" height="70" width="80" alt="Email"></a>
-          <a href="https://t.me/YossefEFM"><img src="Telegram.png" height="70" width="80" alt ="Telegram"> </ing></a>
+            <a href="mailto:youssefessam1269@gmail.com"><img src="I:\Portfolio\sources\Email.png" height="70" width="80" alt="Email"></a>
+          <a href="https://t.me/YossefEFM"><img src="I:\Portfolio\sources\Telegram.png" height="70" width="80" alt ="Telegram"> </ing></a>
           <a href="https://www.linkedin.com/in/yossefessam1408/">
             <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="65" width="75" alt="LinkedIn Badge"/>
           <a href="https://api.whatsapp.com/send?phone=201068105975">
@@ -39,7 +37,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <img src="Me.png" alt="Yossef Essam Fouad" class="img-fluid rounded-circle">
+          <img src="I:\Portfolio\sources\Me.png" alt="Yossef Essam Fouad" class="img-fluid rounded-circle">
         </div>
       </div>
     </div>
@@ -59,7 +57,7 @@
         </div>
         <div class="col-md-4">
           <a href="https://www.kaggle.com/yossefessam1269/code">
-            <img src="Resume.jpeg" alt="Yossef Essam Fouad" class="img-fluid">
+            <img src="I:\Portfolio\sources\Resume.jpeg" alt="Yossef Essam Fouad" class="img-fluid">
           </a>
         </div>
       </div>
@@ -75,11 +73,11 @@
         <p>Graduate: 2023</p>
         <p>Bioinformatics department</p>
         <p>Faculty of Computer and Information Science</p>
-        <p>Ain Shams University</p>         </div>
+        <p>Ain Shams University</p></div>
         <div class="col-md-8">
         <h2>Experience</h2>
           <a href="https://www.linkedin.com/in/yossefessam1408/">
-            <img src="Experience.png" alt="Experiences" class="img-fluid">
+            <img src="I:\Portfolio\sources\Experience.png" alt="Experiences" class="img-fluid">
           </a>
         </div>
       </div>
@@ -116,8 +114,8 @@
           <h2>Projects</h2>
           <ul>
             <li>⬇️For more details about my works visit my accounts ⬇️</li>
-          <li><a href="https://www.kaggle.com/yossefessam1269/code"><img src="kaggle.png" height="70" width="70" alt="Kaggle Profile"></a></li>
-          <li><a href="https://github.com/YossefEFM?tab=repositories"><img src="Github.png" height="70" width="70" alt="GitHub Repositories"></a></li>
+          <li><a href="https://www.kaggle.com/yossefessam1269/code"><img src="I:\Portfolio\sources\kaggle.png" height="70" width="70" alt="Kaggle Profile"></a></li>
+          <li><a href="https://github.com/YossefEFM?tab=repositories"><img src="I:\Portfolio\sources\Github.png" height="70" width="70" alt="GitHub Repositories"></a></li>
           </ul>
         </div>
       </div>
