@@ -11,7 +11,7 @@ nav {
   background-color: #0f65d578;
   text-align: center;
   padding: 10px 0;
-  position: fixed
+  position: fixed;
 }
 
 nav ul {
@@ -70,7 +70,7 @@ nav ul li {
 }
 
 #experience {
-  background-image: url('Background.jpeg');
+  background-image: url('Images/Background.jpeg');
   color: #ffe100;
   font-size: large;
   font: italic ;
@@ -78,7 +78,7 @@ nav ul li {
 }
 #skills{
 	text-align: center;
-  background-image: url('Background.jpeg');
+  background-image: url('Images/Background.jpeg');
   color: #ffffff;
   font-size: large;
   font:bolder;

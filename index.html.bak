@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="I:\Portfolio\sources\styles.css">
+  <link rel="stylesheet" href="Images/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+6ay1Q2t/lom7S461j2Av5Y+3A2yj4ImFedn2PVEQXz7j5" crossorigin="anonymous">
   <title>Yossef Essam Fouad - Portfolio</title>
 </head>
@@ -26,8 +26,8 @@
           <h2>Welcome to My Portfolio</h2>
           <p>I'm Yossef Essam Fouad, a bioinformatics graduate passionate about AI, machine learning, and data science.</p>
           <div class="contact-icons">
-            <a href="mailto:youssefessam1269@gmail.com"><img src="I:\Portfolio\sources\Email.png" height="70" width="80" alt="Email"></a>
-          <a href="https://t.me/YossefEFM"><img src="I:\Portfolio\sources\Telegram.png" height="70" width="80" alt ="Telegram"> </ing></a>
+            <a href="mailto:youssefessam1269@gmail.com"><img src="Images/Email.png" height="70" width="80" alt="Email"></a>
+          <a href="https://t.me/YossefEFM"><img src="Images/Telegram.png" height="70" width="80" alt ="Telegram"> </ing></a>
           <a href="https://www.linkedin.com/in/yossefessam1408/">
             <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="65" width="75" alt="LinkedIn Badge"/>
           <a href="https://api.whatsapp.com/send?phone=201068105975">
@@ -37,7 +37,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <img src="I:\Portfolio\sources\Me.png" alt="Yossef Essam Fouad" class="img-fluid rounded-circle">
+          <img src="Images/Me.png" alt="Yossef Essam Fouad" class="img-fluid rounded-circle">
         </div>
       </div>
     </div>
@@ -56,8 +56,8 @@
         <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/yossefessam1408/">LinkedIn</a> to learn more about my journey and experiences!</p>
         </div>
         <div class="col-md-4">
-          <a href="https://www.kaggle.com/yossefessam1269/code">
-            <img src="I:\Portfolio\sources\Resume.jpeg" alt="Yossef Essam Fouad" class="img-fluid">
+          <a href="https://drive.google.com/file/d/1SV1rqMuwoti3UzWWXF96hywgtzRkeTT2/view?usp=drive_link">
+            <img src="Images/Resume.jpeg" alt="Yossef Essam Fouad" class="img-fluid">
           </a>
         </div>
       </div>
@@ -77,7 +77,7 @@
         <div class="col-md-8">
         <h2>Experience</h2>
           <a href="https://www.linkedin.com/in/yossefessam1408/">
-            <img src="I:\Portfolio\sources\Experience.png" alt="Experiences" class="img-fluid">
+            <img src="Images/Experience.png" alt="Experiences" class="img-fluid">
           </a>
         </div>
       </div>
@@ -114,8 +114,8 @@
           <h2>Projects</h2>
           <ul>
             <li>⬇️For more details about my works visit my accounts ⬇️</li>
-          <li><a href="https://www.kaggle.com/yossefessam1269/code"><img src="I:\Portfolio\sources\kaggle.png" height="70" width="70" alt="Kaggle Profile"></a></li>
-          <li><a href="https://github.com/YossefEFM?tab=repositories"><img src="I:\Portfolio\sources\Github.png" height="70" width="70" alt="GitHub Repositories"></a></li>
+          <li><a href="https://www.kaggle.com/yossefessam1269/code"><img src="Images/kaggle.png" height="70" width="70" alt="Kaggle Profile"></a></li>
+          <li><a href="https://github.com/YossefEFM?tab=repositories"><img src="Images/Github.png" height="70" width="70" alt="GitHub Repositories"></a></li>
           </ul>
         </div>
       </div>
@@ -125,5 +125,5 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+  <script src="Images/script.js"></script>
 </body>
