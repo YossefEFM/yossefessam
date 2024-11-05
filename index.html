@@ -1,148 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="Images/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+6ay1Q2t/lom7S461j2Av5Y+3A2yj4ImFedn2PVEQXz7j5" crossorigin="anonymous">
-  <title>Yossef Essam Fouad - Portfolio</title>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_TRACKING_ID"></script>
-  <script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-1KDX4ZD9J2');
-   </script>
-   <!-- End Google Analytics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yossef Essam - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/script.js" defer></script>
+    <style>
+        /* Style for the hero section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Center align items */
+            justify-content: center;
+            text-align: center;
+             padding: 100px 20px;
+            /* Spacing around the content */
+            background-color: #f8f9fa;
+            /* Light background color */
+        }
 
+        /* Circular image frame style */
+        .image-container {
+            position: relative;
+            width: 200px;
+            /* Adjust size as needed */
+            height: 200px;
+            /* Maintain aspect ratio */
+            border-radius: 50%;
+            /* Circular shape */
+            overflow: hidden;
+            /* Hide overflow */
+            border: 5px solid #007bff;
+            /* Border color */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            /* Shadow effect */
+            margin-bottom: 20px;
+            /* Space between image and text */
+        }
+
+        .image-container img {
+            width: 100%;
+            /* Responsive */
+            height: auto;
+            /* Maintain aspect ratio */
+            border-radius: 50%;
+            /* Circular shape for the image */
+            transition: transform 0.3s ease;
+            /* Smooth scale effect */
+        }
+
+        .image-container:hover img {
+            transform: scale(1.1);
+            /* Slightly scale up on hover */
+        }
+
+        /* Style for the hero content */
+        .hero-content h1 {
+            font-size: 2.5rem;
+            /* Title size */
+            margin: 10px 0;
+            /* Spacing */
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            /* Subtitle size */
+            margin-bottom: 20px;
+            /* Spacing */
+        }
+
+        .cta {
+            padding: 10px 20px;
+            /* Button padding */
+            background-color: #007bff;
+            /* Button background color */
+            color: #fff;
+            /* Button text color */
+            border: none;
+            /* No border */
+            border-radius: 5px;
+            /* Rounded corners */
+            text-decoration: none;
+            /* No underline */
+            transition: background-color 0.3s;
+            /* Smooth background color change */
+        }
+
+        .cta:hover {
+            background-color: #0056b3;
+            /* Darker shade on hover */
+        }
+     
+    </style>
 </head>
+
 <body>
-  <nav>
-    <ul>
-      <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-      <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-      <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-      <li><a href="#projects"><i class="fas fa-certificate"></i> Certificates</a></li>
-      <li><a href="#home"><i class="fas fa-envelope"></i> Contact</a></li>
-    </ul>
-  </nav>
-
-  <section id="home" class="section bg-image text-white py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h2>Welcome to My Portfolio</h2>
-          <p>I'm Yossef Essam Fouad, a bioinformatics graduate passionate about data analysis.</p>
-          <div class="contact-icons">
-            <table>
-			<tr>
-			<td><a href="mailto:youssefessam1269@gmail.com"><img src="Images/Email.png" height="70" width="80" alt="Email"></a></td>
-          <td><a href="https://t.me/YossefEFM"><img src="Images/Telegram.png" height="70" width="80" alt ="Telegram"> </ing></a></td>
-          <td><a href="https://www.linkedin.com/in/yossefessam1408/">
-            <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" height="65" width="75" alt="LinkedIn Badge"/></td>
-          <td><a href="https://api.whatsapp.com/send?phone=201068105975">
-            <img src="https://thefuturevirtualassistant.com/wp-content/uploads/2021/08/whatsapp-bubble.gif" height="70" width="80" alt="Whatsapp Badge"/></td>
-          <td><a href="https://www.facebook.com/YossefEFM/">
-            <img src="https://th.bing.com/th/id/R.7f689981b7050a848293ef0344f30d33?rik=Ooi2n6Vh4wBGOQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-E9cQt2nvyTc%2fURusPT5VqnI%2fAAAAAAAAABw%2fwU8Q0YrG37M%2fs1600%2ffacebook%2blogo%2b3.png&ehk=%2bfW27pizyZApmGoIvKOHuCku5JHSDG52uNTA6WpkGbM%3d&risl=&pid=ImgRaw&r=0"width = "80" hieght= "70" alt="FaceBook"></a></td>
-			</td>
-			</table>
-          </div>
+    <header class="hero">
+        <div class="image-container">
+            <img src="yossef.png" alt="Yossef Essam">
         </div>
-        <div class="col-md-4">
-          <img src="Images/Me.png" alt="Yossef Essam Fouad" class="img-fluid rounded-circle">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Yossef Essam</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="actions">
+                <select id="languageSwitcher">
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                    <option value="fr">French</option>
+                    <option value="es">Spanish</option>
+                    <option value="de">German</option>
+                </select>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1 data-translate="hero-title">Hi, I'm <span class="highlight">Yossef Essam</span></h1>
+            <p data-translate="hero-subtitle">A Full-Stack Web Developer & Data Analyst</p>
+            <a href="projects.html" class="cta" data-translate="hero-cta">Check Out My Work</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="section bg-image text-white py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h2>About Me</h2>
-        <p>Hello! I'm Yossef Essam Fouad, a recent graduate with a strong background in Bioinformatics and Computer Science. I earned my degree from Ain Shams University, graduating with a B grade and 3.125 CGPA in July 2023.</p>
-        <p>My academic journey has equipped me with a diverse set of skills and knowledge in various areas. From AI and Machine Learning to Data Science and Algorithms, I'm passionate about leveraging technology to solve complex problems.</p>
-        <p>With a deep fascination for data-driven insights, I excel in data analysis, visualization, and interpretation. My proficiency in languages such as Python, C++, and Java enables me to tackle challenges from multiple angles.</p>
-        <p>Throughout my studies, I've fostered teamwork, leadership, and effective communication. I enjoy collaborating with others and believe that collective effort leads to innovative solutions. My experience in teaching and agile methodologies further enhances my ability to work efficiently within a team.</p>
-        <p>When I'm not coding or diving into data, you can find me exploring the latest advancements in AI, contributing to open-source projects on GitHub, or participating in Kaggle competitions to continually improve my skills.</p>
-        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/yossefessam1408/">LinkedIn</a> to learn more about my journey and experiences!</p>
-        </div>
-        <div class="col-md-4">
-          <a href="https://drive.google.com/file/d/137NtsG7mX1OH7CXoyVk82gtdVUm9_uu-/view?usp=sharing">
-            <img src="Images/Resume.jpeg" alt="Yossef Essam Fouad" class="img-fluid">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="experience" class="section bg-image text-warning py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-		<h2>Education</h2>
-        <p>Fresh Graduate</p>
-        <p>Graduate: 2023</p>
-        <p>Bioinformatics department</p>
-        <p>Faculty of Computer and Information Science</p>
-        <p>Ain Shams University</p></div>
-        <div class="col-md-8">
-        <h2>Experience</h2>
-          <a href="https://www.linkedin.com/in/yossefessam1408/">
-            <img src="Images/Experience.png" alt="Experiences" class="img-fluid">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="skills" class="section bg-image text-white py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Skills</h2>
-          <ul>
-            <li>Data Analysis | Machine Learning | AI | Data Science | Statistics | Data Visualization</li>
-            <p></p>
-			<li>Algorithms | Data Structures | OOP | Problem Solving | Agile Methodology</li>
-			<p></p>
-			<li>Python | MYSQL | PowerBI | Microsoft Excel | C++ | C# | Java | Scala | JavaScript</li>
-			<p></p>
-			<li>Team Work | Leadership | Teaching</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section bg-image text-white py-5">
-    <div class="container">
-      <div class="row">
-       <div class="col-md-2">
-       <h2>Offer Letters</h2>
-	<p>Check out all of my offer letters<a href="https://drive.google.com/drive/folders/1mA-hz7nqejnK0WhYiWkTGCDUzBAz-khz?usp=sharing"><img src="Images\offer letter.jpeg" width="70" height="70"></a>.</p>
-        </div>
-        <div class="col-md-6">
-	<h2>Certificates</h2>
-        <p>Check out my certificates and skills<a href="https://drive.google.com/drive/folders/1Q3fZI7G_NMhokPHVJhBxaXCj8LMh5G2f?usp=drive_link"><img src="Images\certificate.jpeg"></a>.</p>
-        </div>
-        <div class="col-md-10">
-          <h2>Projects</h2>
-          <ul>
-            <li>⬇️For more details about my works visit my accounts ⬇️</li>
-          <li><a href="https://www.kaggle.com/yossefessam1269/code"><img src="Images/kaggle.png" height="70" width="70" alt="Kaggle Profile"></a></li>
-          <li><a href="https://github.com/YossefEFM?tab=repositories"><img src="Images/Github.png" height="70" width="70" alt="GitHub Repositories"></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="Images/script.js"></script>
-  <a href="https://hits.sh/yossefefm.github.io/yossefessam/"><img alt="Hits" src="https://hits.sh/yossefefm.github.io/yossefessam.svg?style=for-the-badge&color=007ec6&labelColor=000000"/></a>
+    </header>
 </body>
+
+</html>

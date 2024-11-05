@@ -1,0 +1,628 @@
+/* General styles for all pages */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #101010;
+    color: #e0e0e0;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    /* Fixed header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure the header is on top of all other content */
+}
+
+.logo {
+    font-size: 2rem;
+    color: #00bcd4;
+    font-weight: bold;
+}
+   .logo a {
+       color: #00bcd4;
+       text-decoration: none;
+   }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: #101010;
+    background-color: #00bcd4;
+}
+
+.nav-links .active {
+    color: #101010;
+    background-color: #008ba3;
+    border-radius: 5px;
+}
+
+/* Language Switcher */
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+#languageSwitcher {
+    margin-left: 15px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid #00bcd4;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#languageSwitcher:hover {
+    background-color: #00bcd4;
+    color: #101010;
+}
+
+/* Header Content */
+.sub-header {
+    padding-top: 80px;
+    /* Add top padding to avoid content being hidden behind the fixed navbar */
+    text-align: center;
+}
+
+/* Scrollable Content */
+.projects-content {
+    padding: 20px;
+    margin-top: 20px;
+    /* Ensure content does not overlap with the fixed header */
+    overflow-y: auto;
+}
+
+/* Hero Section */
+.hero,
+.sub-header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #0066cc, #0099ff);
+    color: #ffffff;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content,
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.experience-content {
+    background-color: #2e2d2d;
+    /* Light background color for a soft look */
+    padding: 50px 20px;
+    /* Ample padding for spaciousness */
+    border-radius: 15px;
+    /* Rounded corners for the container */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    max-width: 1000px;
+    /* Max width for better readability */
+    margin: 40px auto;
+    /* Center the section with auto margins */
+    animation: slideIn 0.6s ease-in-out;
+    /* Slide-in animation for the section */
+}
+
+.experience-content h2 {
+    font-size: 2.8rem;
+    /* Larger font size for the title */
+    color: #ffffff;
+    /* Dark title color for contrast */
+    margin-bottom: 40px;
+    /* Space below the title */
+    text-align: center;
+    /* Center the title */
+    text-transform: uppercase;
+    /* Bold styling for emphasis */
+    letter-spacing: 1.5px;
+    /* Increased letter spacing */
+}
+
+.experience-item {
+    background-color: #000000;
+    /* White background for items */
+    margin: 25px 0;
+    /* Space between items */
+    padding: 30px;
+    /* Padding inside items */
+    border-radius: 15px;
+    /* Rounded corners for items */
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.15);
+    /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transitions */
+}
+
+.experience-item:hover {
+    transform: scale(1.02);
+    /* Slightly enlarge on hover */
+    box-shadow: 0 8px 40px rgba(255, 255, 255, 0.25);
+    background-color: #585858;
+    color:#000000;
+    /* Increase shadow on hover */
+}
+
+.experience-item h3 {
+    font-size: 1.9rem;
+    /* Larger font size for item titles */
+    color: #ff7f50;
+    /* Coral color for item titles */
+    margin-bottom: 15px;
+    /* Space below title */
+}
+
+.experience-item p {
+    font-size: 1.1rem;
+    /* Slightly larger font size for descriptions */
+    color: #eceaea;
+    /* Grey color for descriptions */
+    line-height: 1.5;
+    /* Increased line height for readability */
+}
+
+.date {
+    font-size: 0.9rem;
+    /* Smaller font size for date */
+    color: #888;
+    /* Light grey color for date */
+    margin-top: 10px;
+    /* Space above date */
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #bdbdbd;
+}
+
+/* Projects and Skills Sections */
+.project-card,
+.skills-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover,
+.skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h3,
+.skills-card h3 {
+    color: #00bcd4;
+}
+.projects-content {
+    background-color: #f4f4f4; /* Light background for contrast */
+    padding: 20px; /* Add padding for space */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 800px; /* Set max width for better readability */
+    margin: 20px auto; /* Center the section */
+}
+
+.projects-content h2 {
+    font-size: 2rem; /* Increase font size for title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Center the title */
+}
+
+.project-card {
+    background-color: #fff; /* White background for cards */
+    margin: 15px 0; /* Space between cards */
+    padding: 20px; /* Padding inside cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.project-card h3 {
+    font-size: 1.5rem; /* Increase font size for project titles */
+    color: #007BFF; /* Color for project titles */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.project-card p {
+    font-size: 1rem; /* Standard font size for project descriptions */
+    color: #555; /* Grey color for descriptions */
+    line-height: 1.5; /* Increase line height for readability */
+}
+
+.cta {
+    display: inline-block; /* Make CTA button inline-block */
+    padding: 10px 15px; /* Padding inside the button */
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* White text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.cta:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.projects-content {
+    background-color: #000000; /* Soft blue background for contrast */
+    padding: 40px; /* More padding for spaciousness */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow for a floating effect */
+    max-width: 900px; /* Set max width for better readability */
+    margin: 40px auto; /* Center the section with margin */
+    animation: fadeIn 0.8s ease-in-out; /* Fade-in animation for the section */
+}
+
+.projects-content h2 {
+    font-size: 2.5rem; /* Increase font size for title */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 30px; /* Space below the title */
+    text-align: center; /* Center the title */
+    text-transform: uppercase; /* Uppercase for a bold look */
+    letter-spacing: 1px; /* Space between letters */
+}
+
+.project-card {
+    background-color: #ffffff; /* White background for cards */
+    margin: 20px 0; /* Space between cards */
+    padding: 25px; /* Padding inside cards */
+    border-radius: 12px; /* Rounded corners for cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    position: relative; /* For absolute positioning of hover effect */
+    overflow: hidden; /* To hide the hover effect overflow */
+}
+
+.project-card::before {
+    content: ""; /* Creates a decorative element */
+    position: absolute; /* Positioning */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    bottom: 0; /* Align to bottom */
+    background: rgba(0, 123, 255, 0.1); /* Soft blue overlay */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s; /* Fade in the overlay */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.project-card:hover::before {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.project-card h3 {
+    font-size: 1.8rem; /* Increase font size for project titles */
+    color: #007BFF; /* Color for project titles */
+    margin-bottom: 15px; /* Space below title */
+    position: relative; /* For text decoration */
+    z-index: 1; /* Ensure text is above the overlay */
+}
+
+.project-card p {
+    font-size: 1rem; /* Standard font size for project descriptions */
+    color: #555; /* Grey color for descriptions */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+.cta {
+    display: inline-block; /* Make CTA button inline-block */
+    padding: 12px 18px; /* Padding inside the button */
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    margin-top: 15px; /* Space above the button */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Button shadow */
+}
+
+.cta:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.projects-content {
+    background-color: #2e2d2d;
+    /* Light background color for a soft look */
+    padding: 50px 20px;
+    /* Ample padding for spaciousness */
+    border-radius: 15px;
+    /* Rounded corners for the container */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    max-width: 1000px;
+    /* Max width for better readability */
+    margin: 40px auto;
+    /* Center the section with auto margins */
+    animation: slideIn 0.6s ease-in-out;
+    /* Slide-in animation for the section */
+}
+
+.projects-content h2 {
+    font-size: 2.8rem;
+    /* Larger font size for the title */
+    color: #ffffff;
+    /* Dark title color for contrast */
+    margin-bottom: 40px;
+    /* Space below the title */
+    text-align: center;
+    /* Center the title */
+    text-transform: uppercase;
+    /* Bold styling for emphasis */
+    letter-spacing: 1.5px;
+    /* Increased letter spacing */
+}
+
+.project-card {
+    background-color: #ffffff;
+    /* White background for cards */
+    margin: 25px;
+    /* Space between cards */
+    padding: 30px;
+    /* Padding inside cards */
+    border-radius: 15px;
+    /* Rounded corners for cards */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transitions */
+    position: relative;
+    /* For hover effects */
+    overflow: hidden;
+    /* To hide overflow on hover */
+}
+
+.project-card::before {
+    content: "";
+    /* Decorative overlay */
+    position: absolute;
+    /* Absolute positioning */
+    top: 0;
+    /* Align to top */
+    left: 0;
+    /* Align to left */
+    right: 0;
+    /* Align to right */
+    bottom: 0;
+    /* Align to bottom */
+    background: rgba(255, 155, 0, 0.1);
+    /* Soft orange overlay */
+    opacity: 0;
+    /* Hidden by default */
+    transition: opacity 0.3s;
+    /* Fade-in for overlay */
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+    /* Increase shadow on hover */
+}
+
+.project-card:hover::before {
+    opacity: 1;
+    /* Show overlay on hover */
+}
+
+.project-card h3 {
+    font-size: 1.9rem;
+    /* Larger font size for project titles */
+    color: #ff7f50;
+    /* Coral color for project titles */
+    margin-bottom: 15px;
+    /* Space below title */
+    position: relative;
+    /* For text decoration */
+    z-index: 1;
+    /* Ensure text is above the overlay */
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    /* Slightly larger font size for descriptions */
+    color: #555;
+    /* Grey color for descriptions */
+    line-height: 1.5;
+    /* Increased line height for readability */
+}
+
+.cta {
+    display: inline-block;
+    /* Make CTA button inline-block */
+    padding: 15px 25px;
+    /* More padding for button */
+    background-color: #ff7f50;
+    /* Button background color */
+    color: #fff;
+    /* White text color */
+    border-radius: 25px;
+    /* Rounded button corners */
+    text-decoration: none;
+    /* Remove underline */
+    margin-top: 15px;
+    /* Space above button */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transitions */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Button shadow */
+}
+
+.cta:hover {
+    background-color: #ff4500;
+    /* Darker coral on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect on hover */
+}
+
+/* Animation for slide-in effect */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.skills-content {
+    background-color: #1e1e1e;
+    /* Dark background for contrast */
+    padding: 20px;
+    /* Add padding for space */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    /* Shadow effect for depth */
+    max-width: 800px;
+    /* Set max width for better readability */
+    margin: 20px auto;
+    /* Center the section */
+}
+
+.skills-content h2 {
+    font-size: 2rem;
+    /* Increase font size for title */
+    color: #00bcd4;
+    /* Primary color for title */
+    margin-bottom: 15px;
+    /* Space below the title */
+    text-align: center;
+    /* Center the title */
+    border-bottom: 2px solid #00bcd4;
+    /* Underline effect */
+    padding-bottom: 10px;
+    /* Space below underline */
+}
+
+.skills-list {
+    list-style: none;
+    /* Remove default bullet points */
+    padding: 0;
+    /* Remove padding */
+}
+
+.skills-list li {
+    background-color: #2a2a2a;
+    /* Slightly lighter dark background */
+    margin: 10px 0;
+    /* Space between items */
+    padding: 15px;
+    /* Padding inside items */
+    border-radius: 5px;
+    /* Rounded corners for list items */
+    transition: transform 0.2s, background-color 0.2s;
+    /* Smooth transitions */
+}
+
+.skills-list li:hover {
+    transform: translateY(-3px);
+    /* Lift effect on hover */
+    background-color: #3c3c3c;
+    /* Change background on hover */
+}
+
+.skills-list strong {
+    color: #ffffff;
+    /* White color for skill categories */
+}
+
+/* Contact Section */
+.contact-details {
+    margin-top: 20px;
+    color: #000000;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+.contact-details a{
+    text-decoration: none;
+    color: #fff;
+}
+.social-links a {
+    color: #000000;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+    text-decoration: none;
+    
+}
+
+.social-links a:hover {
+    color: #bcc6ff;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #bdbdbd;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+}
+
