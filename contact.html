@@ -12,26 +12,29 @@
 
 <body>
     <header class="sub-header">
-        <nav class="navbar">
+    <nav class="navbar">
         <div class="logo"><a href="index.html">Yossef Essam</a></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-            <div class="actions">
-                <select id="languageSwitcher">
-                    <option value="en">English</option>
-                    <option value="ar">Arabic</option>
-                    <option value="fr">French</option>
-                    <option value="es">Spanish</option>
-                    <option value="de">German</option>
-                </select>
-            </div>
-        </nav>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="actions">
+            <select id="languageSwitcher">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <option value="fr">French</option>
+                <option value="es">Spanish</option>
+                <option value="de">German</option>
+            </select>
+        </div>
+    </nav>
         <div class="contact-content">
             <h2 data-translate="contact-title">Contact Me</h2>
             <p data-translate="contact-info">
@@ -57,5 +60,9 @@
         </div>
     </header>
 </body>
-
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+</script>
 </html>
