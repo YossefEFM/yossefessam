@@ -1,4 +1,45 @@
-<div class="projects-content">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yossef Essam - Projects</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/script.js" defer></script>
+ 
+</head>
+
+<body>
+    <header class="sub-header">
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">Yossef Essam</a></div>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="actions">
+            <select id="languageSwitcher">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <option value="fr">French</option>
+                <option value="es">Spanish</option>
+                <option value="de">German</option>
+            </select>
+        </div>
+    </nav>
+        <div class="projects-content">
+            <h2 data-translate="projects-title">Projects</h2>
+
+           <div class="projects-content">
     <h2 data-translate="projects-title">Projects</h2>
 
     <!-- Project 1: Cancer Diagnosis Model -->
@@ -83,3 +124,15 @@
         <a href="https://github.com/YossefEFM" target="_blank" class="cta">Visit My GitHub</a>
     </div>
 </div>
+
+        </div>
+    </header>
+
+   
+</body>
+<script> 
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+        document.querySelector('.nav-links').classList.toggle('active');
+    });
+</script>
+</html>
