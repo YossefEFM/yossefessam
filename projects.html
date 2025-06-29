@@ -1,108 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="projects-content">
+    <h2 data-translate="projects-title">Projects</h2>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yossef Essam - Projects</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="js/script.js" defer></script>
- 
-</head>
+    <!-- Project 1: Cancer Diagnosis Model -->
+    <div class="project-card">
+        <h3>Cancer Diagnosis Model</h3>
+        <p>
+            Built a machine learning model in Python to predict tumor malignancy using the Breast Cancer Wisconsin dataset.
+            Included full EDA, data cleaning, visualization, and model evaluation (Logistic Regression, SVM, Decision Tree).
+            Achieved 96% accuracy with ROC-AUC of 0.98.
+        </p>
+        <a href="https://github.com/YossefEFM/TumorCancerPrediction" target="_blank" class="cta">View on GitHub</a>
+    </div>
 
-<body>
-    <header class="sub-header">
-    <nav class="navbar">
-        <div class="logo"><a href="index.html">Yossef Essam</a></div>
-        <button class="menu-toggle" aria-label="Toggle Menu">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="actions">
-            <select id="languageSwitcher">
-                <option value="en">English</option>
-                <option value="ar">Arabic</option>
-                <option value="fr">French</option>
-                <option value="es">Spanish</option>
-                <option value="de">German</option>
-            </select>
-        </div>
-    </nav>
-        <div class="projects-content">
-            <h2 data-translate="projects-title">Projects</h2>
+    <!-- Project 2: Signal Analysis Tool -->
+    <div class="project-card">
+        <h3>Signal Composer & Analyzer</h3>
+        <p>
+            Developed a desktop application using PyQt to create and analyze signals. Users can sample signals, add noise, and
+            visualize transformations. Showcases knowledge in digital signal processing and real-time visualization.
+        </p>
+        <a href="https://github.com/YossefEFM/Signal_Composer" target="_blank" class="cta">View on GitHub</a>
+    </div>
 
-            <!-- Project 1 -->
-            <div class="project-card" data-translate="project1">
-                <h3 data-translate="project1-title">Plant Disease Prediction</h3>
-                <p data-translate="project1-description">
-                    A machine learning-based website that predicts plant diseases using CNN models. Users can upload
-                    images of plant leaves to get real-time disease predictions and potential treatments. Achieved a
-                    grade 'A' for this project.
-                </p>
-               <!--<a href="#" class="cta" data-translate="view-project">View Project</a>--> 
-            </div>
+    <!-- Project 3: BLAST Bioinformatics Tool -->
+    <div class="project-card">
+        <h3>BLAST Sequence Search Tool</h3>
+        <p>
+            Implemented the BLAST algorithm in Python to search biological sequences. Optimized for protein sequence matching and 
+            efficient scoring. Demonstrates algorithmic design in the bioinformatics domain.
+        </p>
+        <a href="https://github.com/YossefEFM/Blast" target="_blank" class="cta">View on GitHub</a>
+    </div>
 
-            <!-- Project 2 -->
-            <div class="project-card" data-translate="project2">
-                <h3 data-translate="project2-title">Data Visualization Dashboard</h3>
-                <p data-translate="project2-description">
-                    Developed an interactive data visualization dashboard using Power BI and Python, showcasing key
-                    insights from complex datasets for business decision-making.
-                </p>
-              <!-- <a href="#" class="cta" data-translate="view-project">View Project</a>--> 
-            </div>
+    <!-- Project 4: DNA/Protein Alignment Algorithms -->
+    <div class="project-card">
+        <h3>DNA & Protein Sequence Alignments</h3>
+        <p>
+            Created both global and local alignment algorithms for DNA and protein sequences using Python.
+            Applied Needleman-Wunsch and Smith-Waterman techniques, commonly used in computational biology.
+        </p>
+        <a href="https://github.com/YossefEFM/DNA-Alignment" target="_blank" class="cta">View on GitHub</a>
+    </div>
 
-            <!-- Project 3 -->
-            <div class="project-card" data-translate="project3">
-                <h3 data-translate="project3-title">Web Development Projects</h3>
-                <p data-translate="project3-description">
-                    Built multiple responsive websites using PHP, Laravel, and WordPress. Focused on clean design, SEO
-                    optimization, and fast performance.
-                </p>
-               <!-- <a href="#" class="cta" data-translate="view-project">View Project</a>-->
-            </div>
+    <!-- Project 5: Interactive Data Dashboard -->
+    <div class="project-card">
+        <h3>Business Data Dashboard</h3>
+        <p>
+            Built an interactive dashboard using Power BI and Python to visualize complex business data, uncover trends, and enable
+            better decision-making. Includes filtering, dynamic charts, and KPI tracking.
+        </p>
+        <!-- Add your actual link here -->
+        <a href="#" target="_blank" class="cta">View Dashboard</a>
+    </div>
 
-            <!-- Kaggle Projects -->
-            <div class="project-card" data-translate="kaggle-projects">
-                <h3 data-translate="kaggle-title">More Projects on Kaggle</h3>
-                <p data-translate="kaggle-description">
-                    Explore my data science projects, notebooks, and competitions on Kaggle. I have worked on various
-                    data analysis and machine learning challenges, showcasing my ability to extract insights from data.
-                </p>
-                <a href="https://www.kaggle.com/your-kaggle-profile" target="_blank" class="cta"
-                    data-translate="visit-kaggle">
-                    Visit My Kaggle
-                </a>
-            </div>
+    <!-- Project 6: Election Management System -->
+    <div class="project-card">
+        <h3>Election Management System</h3>
+        <p>
+            .NET desktop app for managing elections with role-based access, reporting, and secure vote logging. Includes user
+            authentication and Crystal Reports for analytics.
+        </p>
+        <a href="https://github.com/YossefEFM/Election-Management" target="_blank" class="cta">View on GitHub</a>
+    </div>
 
-            <!-- GitHub Projects -->
-            <div class="project-card" data-translate="github-projects">
-                <h3 data-translate="github-title">More Projects on GitHub</h3>
-                <p data-translate="github-description">
-                    Check out my GitHub for open-source projects, code repositories, and contributions. I have built
-                    applications, scripts, and tools that demonstrate my programming and software development skills.
-                </p>
-                <a href="https://github.com/your-github-profile" target="_blank" class="cta"
-                    data-translate="visit-github">
-                    Visit My GitHub
-                </a>
-            </div>
-        </div>
-    </header>
+    <!-- Kaggle Projects -->
+    <div class="project-card">
+        <h3>More Projects on Kaggle</h3>
+        <p>
+            Explore my data science projects, notebooks, and competitions on Kaggle. I have worked on various data analysis and
+            machine learning challenges, showcasing my ability to extract insights from data.
+        </p>
+        <a href="https://www.kaggle.com/YossefEFM" target="_blank" class="cta">Visit My Kaggle</a>
+    </div>
 
-   
-</body>
-<script> 
-    document.querySelector('.menu-toggle').addEventListener('click', function () {
-        document.querySelector('.nav-links').classList.toggle('active');
-    });
-</script>
-</html>
+    <!-- GitHub Projects -->
+    <div class="project-card">
+        <h3>More Projects on GitHub</h3>
+        <p>
+            Check out my GitHub for open-source projects, code repositories, and contributions. I have built applications, scripts,
+            and tools that demonstrate my programming and software development skills.
+        </p>
+        <a href="https://github.com/YossefEFM" target="_blank" class="cta">Visit My GitHub</a>
+    </div>
+</div>
