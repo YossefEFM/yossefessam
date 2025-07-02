@@ -1,131 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yossef Essam - Experience</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yossef Essam - Experience</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="js/translations.js" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
   <header class="sub-header">
     <nav class="navbar">
-        <div class="logo"><a href="index.html">Yossef Essam</a></div>
-        <button class="menu-toggle" aria-label="Toggle Menu">
-            <i class="fas fa-bars"></i>
-        </button>
-        <ul class="nav-links">
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="experience.html" class="active">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="actions">
-            <select id="languageSwitcher">
-                <option value="en">English</option>
-                <option value="ar">Arabic</option>
-                <option value="fr">French</option>
-                <option value="es">Spanish</option>
-                <option value="de">German</option>
-            </select>
-        </div>
+      <div class="logo"><a href="index.html">Yossef Essam</a></div>
+      <button class="menu-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html" data-translate="nav-home">Home</a></li>
+        <li><a href="about.html" data-translate="nav-about">About Me</a></li>
+        <li><a href="experience.html" class="active" data-translate="nav-experience">Experience</a></li>
+        <li><a href="projects.html" data-translate="nav-projects">Projects</a></li>
+        <li><a href="skills.html" data-translate="nav-skills">Skills</a></li>
+        <li><a href="contact.html" data-translate="nav-contact">Contact</a></li>
+      </ul>
+      <div class="actions">
+        <select id="languageSwitcher">
+          <option value="en">English</option>
+          <option value="ar">Arabic</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
+          <option value="de">German</option>
+        </select>
+      </div>
     </nav>
-        <div class="experience-content">
-            <h2 data-translate="experience-title">Experience</h2>
 
-            <div class="experience-item">
-                <h3 data-translate="experience1">Roaya Group - Web Developer</h3>
-                <p data-translate="experience1_text">
-                    Developed websites using PHP, Laravel, WordPress, and HTML. Managed a software team and coordinated
-                    projects, overseeing UI/UX developers, graphic designers, and content creators. Contributed to
-                    creating efficient, user-friendly web interfaces.
-                </p>
-                <p class="date" data-translate="date1">04/2024 - Present</p>
-            </div>
+    <div class="experience-content">
+      <h2 data-translate="experience-title">Experience</h2>
 
-            <div class="experience-item">
-                <h3 data-translate="experience2">ASDC - Data Analysis Intern</h3>
-                <p data-translate="experience2_text">
-                    Participated in a virtual internship focused on AI principles and data analysis to solve real-world
-                    problems. Utilized Python and data visualization tools to analyze and present data-driven insights.
-                </p>
-                <p class="date" data-translate="date2">11/2023 - 01/2024</p>
-            </div>
+      <div class="experience-item">
+        <h3 data-translate="experience1">Roaya Group - Web Developer</h3>
+        <p data-translate="experience1_text">
+          Developed websites using PHP, Laravel, WordPress, and HTML. Managed a software team and coordinated
+          projects, overseeing UI/UX developers, graphic designers, and content creators.
+        </p>
+        <p class="date" data-translate="date1">04/2024 - Present</p>
+      </div>
 
-            <div class="experience-item">
-                <h3 data-translate="experience3">ASDC - AI Intern</h3>
-                <p data-translate="experience3_text">
-                    Gained hands-on experience with AI projects, learning to develop solutions for practical challenges.
-                    Worked on AI models and algorithms, optimizing performance and accuracy.
-                </p>
-                <p class="date" data-translate="date3">10/2023 - 11/2023</p>
-            </div>
+      <div class="experience-item">
+        <h3 data-translate="experience2">ASDC - Data Analysis Intern</h3>
+        <p data-translate="experience2_text">
+          Participated in a virtual internship focused on AI principles and data analysis to solve real-world
+          problems. Utilized Python and data visualization tools to analyze and present data-driven insights.
+        </p>
+        <p class="date" data-translate="date2">11/2023 - 01/2024</p>
+      </div>
 
-            <div class="experience-item">
-                <h3 data-translate="experience4">The Sparks Foundation - IOT Intern</h3>
-                <p data-translate="experience4_text">
-                    Worked on IoT projects, integrating devices and analyzing data for innovative solutions. Focused on
-                    developing and optimizing IoT-based applications to automate processes and improve efficiency.
-                </p>
-                <p class="date" data-translate="date4">09/2023 - 10/2023</p>
-            </div>
+      <div class="experience-item">
+        <h3 data-translate="experience3">ASDC - AI Intern</h3>
+        <p data-translate="experience3_text">
+          Gained hands-on experience with AI projects, learning to develop solutions for practical challenges.
+          Worked on AI models and algorithms, optimizing performance and accuracy.
+        </p>
+        <p class="date" data-translate="date3">10/2023 - 11/2023</p>
+      </div>
 
-            <div class="experience-item">
-                <h3 data-translate="experience5">TechnoHacks Edutech - Data Analysis Intern</h3>
-                <p data-translate="experience5_text">
-                    Applied data analysis techniques to extract insights from complex datasets. Developed and presented
-                    visual reports using Power BI, enhancing decision-making processes for the organization.
-                </p>
-                <p class="date" data-translate="date5">08/2022 - 04/2023</p>
-            </div>
+      <div class="experience-item">
+        <h3 data-translate="experience4">The Sparks Foundation - IOT Intern</h3>
+        <p data-translate="experience4_text">
+          Worked on IoT projects, integrating devices and analyzing data for innovative solutions.
+          Focused on developing and optimizing IoT-based applications.
+        </p>
+        <p class="date" data-translate="date4">09/2023 - 10/2023</p>
+      </div>
 
-            <div class="experience-item">
-                <h3 data-translate="experience6">Coding Samurai - Data Science Intern</h3>
-                <p data-translate="experience6_text">
-                    Engaged in data-driven projects, gaining expertise in predictive modeling and statistical analysis.
-                    Contributed to building machine learning models and automated data processing pipelines.
-                </p>
-                <p class="date" data-translate="date6">10/2022 - 11/2022</p>
-            </div>
+      <div class="experience-item">
+        <h3 data-translate="experience5">TechnoHacks Edutech - Data Analysis Intern</h3>
+        <p data-translate="experience5_text">
+          Applied data analysis techniques to extract insights from complex datasets.
+          Developed and presented visual reports using Power BI.
+        </p>
+        <p class="date" data-translate="date5">08/2022 - 04/2023</p>
+      </div>
 
-            <div class="experience-item">
-                <h3 data-translate="experience7">Coding Alpha - Machine Learning Intern</h3>
-                <p data-translate="experience7_text">
-                    Worked on machine learning projects, developing and evaluating models for real-world applications.
-                    Focused on optimizing algorithms and enhancing the performance of predictive systems.
-                </p>
-                <p class="date" data-translate="date7">08/2022 - 09/2022</p>
-            </div>
+      <div class="experience-item">
+        <h3 data-translate="experience6">Coding Samurai - Data Science Intern</h3>
+        <p data-translate="experience6_text">
+          Engaged in data-driven projects, gaining expertise in predictive modeling and statistical analysis.
+          Built machine learning models and automated data pipelines.
+        </p>
+        <p class="date" data-translate="date6">10/2022 - 11/2022</p>
+      </div>
 
-            <div class="experience-item">
-                <h3 data-translate="experience8">MeriSKILL - Data Analysis Intern</h3>
-                <p data-translate="experience8_text">
-                    Utilized Power BI and Python to create interactive dashboards and perform advanced data analysis.
-                    Developed skills in data manipulation and visualization, providing actionable insights for business
-                    growth.
-                </p>
-                <p class="date" data-translate="date8">06/2022 - 07/2022</p>
-            </div>
+      <div class="experience-item">
+        <h3 data-translate="experience7">Coding Alpha - Machine Learning Intern</h3>
+        <p data-translate="experience7_text">
+          Worked on machine learning projects, developing and evaluating models for real-world applications.
+        </p>
+        <p class="date" data-translate="date7">08/2022 - 09/2022</p>
+      </div>
 
-            <div class="experience-item">
-                <h3 data-translate="experience9">Bank Miser - Summer Training</h3>
-                <p data-translate="experience9_text">
-                    Completed a comprehensive summer training program, learning about banking operations and financial
-                    data analysis. Acquired hands-on experience in data handling and customer service processes.
-                </p>
-                <p class="date" data-translate="date9">12/2021 - 08/2022</p>
-            </div>
-        </div>
-    </header>
-</body>
-<script>
-     document.querySelector('.menu-toggle').addEventListener('click', function () {
-        document.querySelector('.nav-links').classList.toggle('active');
+      <div class="experience-item">
+        <h3 data-translate="experience8">MeriSKILL - Data Analysis Intern</h3>
+        <p data-translate="experience8_text">
+          Utilized Power BI and Python to create interactive dashboards and perform advanced data analysis.
+        </p>
+        <p class="date" data-translate="date8">06/2022 - 07/2022</p>
+      </div>
+
+      <div class="experience-item">
+        <h3 data-translate="experience9">Bank Miser - Summer Training</h3>
+        <p data-translate="experience9_text">
+          Completed a comprehensive summer training program, learning about banking operations and financial
+          data analysis.
+        </p>
+        <p class="date" data-translate="date9">12/2021 - 08/2022</p>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('.nav-links').classList.toggle('active');
     });
-</script>
+  </script>
+</body>
 </html>
