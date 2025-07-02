@@ -237,7 +237,9 @@ body {
     background: rgba(255, 155, 0, 0.1);
     opacity: 0;
     transition: opacity 0.3s;
+    pointer-events: none; /* ✅ هذا هو المفتاح */
 }
+
 
 .project-card:hover {
     transform: scale(1.05);
@@ -273,7 +275,7 @@ body {
 }
 
 .cta:hover {
-    background-color: #0056b3;
+    background-color: #0057b3;
 }
 
 /* ===== Skills Section ===== */
