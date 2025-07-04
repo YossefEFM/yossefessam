@@ -1,23 +1,23 @@
-/* General styles for all pages */
+/* ===== General Styles ===== */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #101010;
+    background-color: #0003cc;
     color: #e0e0e0;
     line-height: 1.6;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    /* Prevent horizontal scrolling */
 }
 
-/* General styles for the navbar */
+/* ===== Navbar ===== */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
-    background-color: #1a1a1a;
+    flex-wrap: wrap;
+    padding: 10px 5vw;
+    background-color: rgba(26, 26, 26, 0.66);
     color: #e0e0e0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
@@ -25,22 +25,39 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    /* Ensure the header is on top of all other content */
 }
 
-/* Logo styles */
 .logo a {
     color: #00bcd4;
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
+    white-space: nowrap;
+    display: inline-block;
 }
 
-/* Navigation Links */
+.navbar-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #e0e0e0;
+    font-size: 1.8rem;
+    cursor: pointer;
+    outline: none;
+    padding-left: 10%;
+}
+
+/* ===== Nav Links ===== */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 5px;
     margin: 0;
     padding: 0;
     transition: max-height 0.3s ease;
@@ -60,55 +77,18 @@ body {
     background-color: #00bcd4;
 }
 
-/* Hamburger Menu Button */
-.menu-toggle {
-    display: none;
-    /* Hidden by default */
-    background: none;
-    border: none;
-    color: #e0e0e0;
-    font-size: 1.8rem;
-    cursor: pointer;
-    outline: none;
-    padding-left: 50%;
+.nav-links a.active {
+    color: #101010;
+    background-color: #00bcd4;
+    border: 2px solid #000;
+    border-radius: 20px;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-        /* Show the toggle button on smaller screens */
-    }
-
-    .nav-links {
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #1a1a1a;
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .nav-links.active {
-        max-height: 300px;
-        /* Adjust the height as needed */
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-}
-
-/* Language Switcher */
+/* ===== Language Switcher ===== */
 .actions {
     display: flex;
     align-items: center;
-    
     padding-right: 10%;
-    padding-left: -10%;
 }
 
 #languageSwitcher {
@@ -127,121 +107,91 @@ body {
     color: #101010;
 }
 
-/* Header Content */
-.sub-header {
-    padding-top: 80px;
-    /* Add top padding to avoid content being hidden behind the fixed navbar */
+/* ===== Header Sections ===== */
+.sub-header,
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-}
-
-/* Scrollable Content */
-.projects-content {
-    padding: 20px;
-    margin-top: 20px;
-    /* Ensure content does not overlap with the fixed header */
-    overflow-y: auto;
-}
-
-/* Hero Section */
-.hero,
-.sub-header {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #0066cc, #0099ff);
+    padding: 100px 20px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.44), #0099ff, #0003cc);
     color: #ffffff;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: auto;
+}
+
+.sub-header {
+    padding-top: 80px;
 }
 
 .hero-content,
 .about-content {
     max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 110px 20px 20px;
 }
 
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* ===== Experience Section ===== */
 .experience-content {
     background-color: #2e2d2d;
-    /* Light background color for a soft look */
     padding: 50px 20px;
-    /* Ample padding for spaciousness */
     border-radius: 15px;
-    /* Rounded corners for the container */
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
-    /* Soft shadow for depth */
     max-width: 1000px;
-    /* Max width for better readability */
-    margin: 40px auto;
-    /* Center the section with auto margins */
+    margin: 50px auto;
     animation: slideIn 0.6s ease-in-out;
-    /* Slide-in animation for the section */
 }
 
 .experience-content h2 {
     font-size: 2.8rem;
-    /* Larger font size for the title */
     color: #ffffff;
-    /* Dark title color for contrast */
     margin-bottom: 40px;
-    /* Space below the title */
     text-align: center;
-    /* Center the title */
     text-transform: uppercase;
-    /* Bold styling for emphasis */
     letter-spacing: 1.5px;
-    /* Increased letter spacing */
 }
 
 .experience-item {
-    background-color: #000000;
-    /* White background for items */
+    background-color: #000;
     margin: 25px 0;
-    /* Space between items */
     padding: 30px;
-    /* Padding inside items */
     border-radius: 15px;
-    /* Rounded corners for items */
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.15);
-    /* Subtle shadow */
     transition: transform 0.3s, box-shadow 0.3s;
-    /* Smooth transitions */
 }
 
 .experience-item:hover {
     transform: scale(1.02);
-    /* Slightly enlarge on hover */
     box-shadow: 0 8px 40px rgba(255, 255, 255, 0.25);
     background-color: #585858;
-    color:#000000;
-    /* Increase shadow on hover */
+    color: #000;
 }
 
 .experience-item h3 {
     font-size: 1.9rem;
-    /* Larger font size for item titles */
     color: #ff7f50;
-    /* Coral color for item titles */
     margin-bottom: 15px;
-    /* Space below title */
 }
 
 .experience-item p {
     font-size: 1.1rem;
-    /* Slightly larger font size for descriptions */
     color: #eceaea;
-    /* Grey color for descriptions */
     line-height: 1.5;
-    /* Increased line height for readability */
-}
-
-.date {
-    font-size: 0.9rem;
-    /* Smaller font size for date */
-    color: #888;
-    /* Light grey color for date */
-    margin-top: 10px;
-    /* Space above date */
 }
 
 .date {
@@ -249,411 +199,159 @@ body {
     color: #bdbdbd;
 }
 
-/* Projects and Skills Sections */
-.project-card,
-.skills-card {
-    background-color: #1a1a1a;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover,
-.skills-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
-.project-card h3,
-.skills-card h3 {
-    color: #00bcd4;
-}
-.projects-content {
-    background-color: #f4f4f4; /* Light background for contrast */
-    padding: 20px; /* Add padding for space */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    max-width: 800px; /* Set max width for better readability */
-    margin: 20px auto; /* Center the section */
-}
-
-.projects-content h2 {
-    font-size: 2rem; /* Increase font size for title */
-    color: #333; /* Dark color for the title */
-    margin-bottom: 20px; /* Space below the title */
-    text-align: center; /* Center the title */
-}
-
-.project-card {
-    background-color: #fff; /* White background for cards */
-    margin: 15px 0; /* Space between cards */
-    padding: 20px; /* Padding inside cards */
-    border-radius: 8px; /* Rounded corners for cards */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
-}
-
-.project-card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-}
-
-.project-card h3 {
-    font-size: 1.5rem; /* Increase font size for project titles */
-    color: #007BFF; /* Color for project titles */
-    margin-bottom: 10px; /* Space below title */
-}
-
-.project-card p {
-    font-size: 1rem; /* Standard font size for project descriptions */
-    color: #555; /* Grey color for descriptions */
-    line-height: 1.5; /* Increase line height for readability */
-}
-
-.cta {
-    display: inline-block; /* Make CTA button inline-block */
-    padding: 10px 15px; /* Padding inside the button */
-    background-color: #007BFF; /* Button background color */
-    color: #fff; /* White text color */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    margin-top: 10px; /* Space above the button */
-    transition: background-color 0.3s; /* Smooth background transition */
-}
-
-.cta:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
-.projects-content {
-    background-color: #000000; /* Soft blue background for contrast */
-    padding: 40px; /* More padding for spaciousness */
-    border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15); /* Deeper shadow for a floating effect */
-    max-width: 900px; /* Set max width for better readability */
-    margin: 40px auto; /* Center the section with margin */
-    animation: fadeIn 0.8s ease-in-out; /* Fade-in animation for the section */
-}
-
-.projects-content h2 {
-    font-size: 2.5rem; /* Increase font size for title */
-    color: #333; /* Dark color for the title */
-    margin-bottom: 30px; /* Space below the title */
-    text-align: center; /* Center the title */
-    text-transform: uppercase; /* Uppercase for a bold look */
-    letter-spacing: 1px; /* Space between letters */
-}
-
-.project-card {
-    background-color: #ffffff; /* White background for cards */
-    margin: 20px 0; /* Space between cards */
-    padding: 25px; /* Padding inside cards */
-    border-radius: 12px; /* Rounded corners for cards */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
-    position: relative; /* For absolute positioning of hover effect */
-    overflow: hidden; /* To hide the hover effect overflow */
-}
-
-.project-card::before {
-    content: ""; /* Creates a decorative element */
-    position: absolute; /* Positioning */
-    top: 0; /* Align to top */
-    left: 0; /* Align to left */
-    right: 0; /* Align to right */
-    bottom: 0; /* Align to bottom */
-    background: rgba(0, 123, 255, 0.1); /* Soft blue overlay */
-    opacity: 0; /* Hidden by default */
-    transition: opacity 0.3s; /* Fade in the overlay */
-}
-
-.project-card:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
-}
-
-.project-card:hover::before {
-    opacity: 1; /* Show overlay on hover */
-}
-
-.project-card h3 {
-    font-size: 1.8rem; /* Increase font size for project titles */
-    color: #007BFF; /* Color for project titles */
-    margin-bottom: 15px; /* Space below title */
-    position: relative; /* For text decoration */
-    z-index: 1; /* Ensure text is above the overlay */
-}
-
-.project-card p {
-    font-size: 1rem; /* Standard font size for project descriptions */
-    color: #555; /* Grey color for descriptions */
-    line-height: 1.6; /* Increase line height for readability */
-}
-
-.cta {
-    display: inline-block; /* Make CTA button inline-block */
-    padding: 12px 18px; /* Padding inside the button */
-    background-color: #007BFF; /* Button background color */
-    color: #fff; /* White text color */
-    border-radius: 8px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    margin-top: 15px; /* Space above the button */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Button shadow */
-}
-
-.cta:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-/* Animation for fade-in effect */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* ===== Projects Section ===== */
 .projects-content {
     background-color: #2e2d2d;
-    /* Light background color for a soft look */
     padding: 50px 20px;
-    /* Ample padding for spaciousness */
     border-radius: 15px;
-    /* Rounded corners for the container */
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
-    /* Soft shadow for depth */
     max-width: 1000px;
-    /* Max width for better readability */
     margin: 40px auto;
-    /* Center the section with auto margins */
     animation: slideIn 0.6s ease-in-out;
-    /* Slide-in animation for the section */
 }
 
 .projects-content h2 {
     font-size: 2.8rem;
-    /* Larger font size for the title */
     color: #ffffff;
-    /* Dark title color for contrast */
     margin-bottom: 40px;
-    /* Space below the title */
     text-align: center;
-    /* Center the title */
     text-transform: uppercase;
-    /* Bold styling for emphasis */
     letter-spacing: 1.5px;
-    /* Increased letter spacing */
 }
 
 .project-card {
-    background-color: #ffffff;
-    /* White background for cards */
+    background-color: #fff;
     margin: 25px;
-    /* Space between cards */
     padding: 30px;
-    /* Padding inside cards */
     border-radius: 15px;
-    /* Rounded corners for cards */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
-    /* Subtle shadow */
     transition: transform 0.3s, box-shadow 0.3s;
-    /* Smooth transitions */
     position: relative;
-    /* For hover effects */
     overflow: hidden;
-    /* To hide overflow on hover */
 }
 
 .project-card::before {
     content: "";
-    /* Decorative overlay */
     position: absolute;
-    /* Absolute positioning */
-    top: 0;
-    /* Align to top */
-    left: 0;
-    /* Align to left */
-    right: 0;
-    /* Align to right */
-    bottom: 0;
-    /* Align to bottom */
+    top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(255, 155, 0, 0.1);
-    /* Soft orange overlay */
     opacity: 0;
-    /* Hidden by default */
     transition: opacity 0.3s;
-    /* Fade-in for overlay */
+    pointer-events: none; /* ✅ هذا هو المفتاح */
 }
+
 
 .project-card:hover {
     transform: scale(1.05);
-    /* Slightly enlarge on hover */
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
-    /* Increase shadow on hover */
 }
 
 .project-card:hover::before {
     opacity: 1;
-    /* Show overlay on hover */
 }
 
 .project-card h3 {
     font-size: 1.9rem;
-    /* Larger font size for project titles */
     color: #ff7f50;
-    /* Coral color for project titles */
     margin-bottom: 15px;
-    /* Space below title */
     position: relative;
-    /* For text decoration */
     z-index: 1;
-    /* Ensure text is above the overlay */
 }
 
 .project-card p {
     font-size: 1.1rem;
-    /* Slightly larger font size for descriptions */
     color: #555;
-    /* Grey color for descriptions */
     line-height: 1.5;
-    /* Increased line height for readability */
 }
 
 .cta {
-    display: inline-block;
-    /* Make CTA button inline-block */
-    padding: 15px 25px;
-    /* More padding for button */
-    background-color: #ff7f50;
-    /* Button background color */
+    padding: 10px 20px;
+    background-color: #007bff;
     color: #fff;
-    /* White text color */
-    border-radius: 25px;
-    /* Rounded button corners */
+    border: none;
+    border-radius: 5px;
     text-decoration: none;
-    /* Remove underline */
-    margin-top: 15px;
-    /* Space above button */
-    transition: background-color 0.3s, transform 0.3s;
-    /* Smooth transitions */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Button shadow */
+    margin-top: 30px;
+    transition: background-color 0.3s;
 }
 
 .cta:hover {
-    background-color: #ff4500;
-    /* Darker coral on hover */
-    transform: translateY(-2px);
-    /* Slight lift effect on hover */
+    background-color: #0057b3;
 }
 
-/* Animation for slide-in effect */
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* ===== Skills Section ===== */
 .skills-content {
     background-color: #1e1e1e;
-    /* Dark background for contrast */
-    padding: 20px;
-    /* Add padding for space */
+    padding: 80px 20px 20px;
     border-radius: 8px;
-    /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    /* Shadow effect for depth */
     max-width: 800px;
-    /* Set max width for better readability */
     margin: 20px auto;
-    /* Center the section */
 }
 
 .skills-content h2 {
     font-size: 2rem;
-    /* Increase font size for title */
     color: #00bcd4;
-    /* Primary color for title */
     margin-bottom: 15px;
-    /* Space below the title */
     text-align: center;
-    /* Center the title */
     border-bottom: 2px solid #00bcd4;
-    /* Underline effect */
     padding-bottom: 10px;
-    /* Space below underline */
 }
 
 .skills-list {
     list-style: none;
-    /* Remove default bullet points */
     padding: 0;
-    /* Remove padding */
 }
 
 .skills-list li {
     background-color: #2a2a2a;
-    /* Slightly lighter dark background */
     margin: 10px 0;
-    /* Space between items */
     padding: 15px;
-    /* Padding inside items */
     border-radius: 5px;
-    /* Rounded corners for list items */
     transition: transform 0.2s, background-color 0.2s;
-    /* Smooth transitions */
 }
 
 .skills-list li:hover {
     transform: translateY(-3px);
-    /* Lift effect on hover */
     background-color: #3c3c3c;
-    /* Change background on hover */
 }
 
 .skills-list strong {
     color: #ffffff;
-    /* White color for skill categories */
 }
 
-/* Contact Section */
+/* ===== Contact Section ===== */
+.contact-content {
+    padding-top: 110px;
+}
+
 .contact-details {
     margin-top: 20px;
-    color: #000000;
+    color: #000;
 }
 
 .contact-details p {
     margin: 10px 0;
 }
-.contact-details a{
+
+.contact-details a {
     text-decoration: none;
     color: #fff;
 }
+
 .social-links a {
-    color: #000000;
+    color: #000;
     margin: 0 10px;
     font-size: 1.5rem;
     transition: color 0.3s;
     text-decoration: none;
-    
 }
 
 .social-links a:hover {
     color: #bcc6ff;
 }
 
-/* Footer */
+/* ===== Footer ===== */
 footer {
     background-color: #1a1a1a;
     color: #bdbdbd;
@@ -663,3 +361,98 @@ footer {
     margin-top: 30px;
 }
 
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .navbar-content {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #1a1a1a;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-links.active {
+        max-height: 300px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .logo a {
+        font-size: 2rem;
+    }
+}
+
+/* ===== Animations ===== */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Certificates Section ===== */
+.certificates-section {
+    background: linear-gradient(135deg, #0076a5 0%, #000000 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+}
+
+.certificates-section h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.certificates-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.btn-certificates {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff7f50;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-certificates:hover {
+    background-color: #ffffff;
+    color: #ff7f50;
+    transform: translateY(-2px);
+}
