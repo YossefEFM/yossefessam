@@ -25,9 +25,9 @@
       </a>
     </td>
     <td>
-      <a href="https://api.whatsapp.com/send?phone=201068105975">
-        <img src="https://thefuturevirtualassistant.com/wp-content/uploads/2021/08/whatsapp-bubble.gif" height="40" width="50" alt="WhatsApp Badge">
-      </a>
+     <a href="https://api.whatsapp.com/send?phone=201068105975">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" height="40" width="50" alt="WhatsApp Badge">
+</a>
     </td>
     <td>
       <a href="https://www.facebook.com/YossefEFM/">
