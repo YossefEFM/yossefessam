@@ -80,6 +80,8 @@ const translations = {
     "project-maintenance-desc": "Developed a predictive maintenance solution using the AI4I 2020 dataset.",
     "project-terrorism-title": "Exploratory Data Analysis on Terrorism Dataset",
     "project-terrorism-desc": "Performed Exploratory Data Analysis (EDA) on the terrorism dataset.",
+    "project-symptoms-title":"",
+    "project-symptoms-desc":"",
     "project-cancer-title": "Cancer Diagnosis Model",
     "project-cancer-desc": "Built a machine learning model in Python to predict tumor malignancy using the Breast Cancer Wisconsin dataset.",
     "project-blast-title": "BLAST Sequence Search Tool",
