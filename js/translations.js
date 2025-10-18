@@ -67,9 +67,11 @@ const translations = {
     "experience10":"El Shorouk City Development Authority - Systems and Information Engineer",
     "experience10_text":
           "Working in Regulation Management. Responsible for Data Entry, data cleaning, data mining and data analysis.",
+    "date10":"09/2025 - Present",
     "experience11":"Kaaf Creativa - Machine learning Training",
     "experience11_text":
           "Learning and get more experience in machine learning and deep learning.",
+    "date11":"07/2025 - 09/2025",
 
     // Skills Page
     "skills-title-page": "Yossef Essam - Skills",
@@ -173,12 +175,14 @@ const translations = {
   "experience9": "بنك مصر - تدريب صيفي",
   "experience9_text": "أكملت برنامج تدريب صيفي شامل وتعلمت عن العمليات المصرفية وتحليل البيانات المالية.",
   "date9": "12/2021 - 08/2022",
-  "experience10":"جهاز تنمية مدينة الشروق - مهندس نظم و معلومات",
+    "experience10":"جهاز تنمية مدينة الشروق - مهندس نظم و معلومات",
     "experience10_text":
           "أعمل في إدارة التقنين. مسؤول عن إدخال البيانات، وتنظيف البيانات، واستخراج البيانات، وتحليل البيانات.",
+  "date10":"09/2025 - حتى الان",
     "experience11":"Kaaf Creativa - تدريب على تعلم الاله ",
     "experience11_text":
           "تعلّم واكتسب المزيد من الخبرة في تعلم الآلة والتعلم العميق.",
+  "date11":"07/2025 - 09/2025",
 
   // صفحة المهارات
   "skills-title-page": "يوسف عصام - المهارات",
@@ -281,6 +285,14 @@ ar: {
   "experience9": "بنك مصر - تدريب صيفي",
   "experience9_text": "أكملت برنامج تدريب صيفي شامل وتعلمت عن العمليات المصرفية وتحليل البيانات المالية.",
   "date9": "12/2021 - 08/2022",
+   "experience10":"جهاز تنمية مدينة الشروق - مهندس نظم و معلومات",
+    "experience10_text":
+          "أعمل في إدارة التقنين. مسؤول عن إدخال البيانات، وتنظيف البيانات، واستخراج البيانات، وتحليل البيانات.",
+  "date10":"09/2025 - حتى الان",
+    "experience11":"Kaaf Creativa - تدريب على تعلم الاله ",
+    "experience11_text":
+          "تعلّم واكتسب المزيد من الخبرة في تعلم الآلة والتعلم العميق.",
+  "date11":"07/2025 - 09/2025",
 
   // صفحة المهارات
   "skills-title-page": "يوسف عصام - المهارات",
@@ -383,6 +395,14 @@ fr: {
   "experience9": "Bank Misr - Stage d'été",
   "experience9_text": "Stage intensif en opérations bancaires et analyse financière.",
   "date9": "12/2021 - 08/2022",
+      "experience10":"Autorité de Développement de la Ville d'El Shorouk - Ingénieur Systèmes et Informations",
+    "experience10_text":
+          "Travailler dans la gestion de la réglementation. Responsable de la saisie de données, du nettoyage des données, de l'exploration de données et de l'analyse des données.",
+    "date10":"09/2025 - Présent",
+    "experience11":"Kaaf Creativa - Formation en apprentissage automatique",
+    "experience11_text":
+          "Apprendre et acquérir plus d'expérience en apprentissage automatique et en apprentissage profond.",
+    "date11":"07/2025 - 09/2025",
 
   // Compétences
   "skills-title-page": "Yossef Essam - Compétences",
@@ -485,6 +505,14 @@ es: {
   "experience9": "Bank Misr - Prácticas de Verano",
   "experience9_text": "Aprendí sobre operaciones bancarias y análisis financiero.",
   "date9": "12/2021 - 08/2022",
+      "experience10":"Autoridad de Desarrollo de la Ciudad de El Shorouk - Ingeniero de Sistemas e Información",
+    "experience10_text":
+          "Trabajando en Gestión Regulatoria. Responsable de la entrada de datos, limpieza de datos, minería de datos y análisis de datos.",
+    "date10":"09/2025 - Presente",
+    "experience11":"Kaaf Creativa - Capacitación en aprendizaje automático",
+    "experience11_text":
+          "Aprender y obtener más experiencia en aprendizaje automático y aprendizaje profundo.",
+    "date11":"07/2025 - 09/2025",
 
   // Habilidades
   "skills-title-page": "Yossef Essam - Habilidades",
@@ -587,6 +615,14 @@ de: {
   "experience9": "Bank Misr - Sommerpraktikum",
   "experience9_text": "Bankabläufe und Finanzdatenanalyse im Rahmen eines Sommerpraktikums erlernt.",
   "date9": "12/2021 - 08/2022",
+     "experience10":"El Shorouk City Development Authority - Systemen- en Informatietechnoloog",
+    "experience10_text":
+          "Werkzaam in Regelgevingsbeheer. Verantwoordelijk voor gegevensinvoer, gegevensopruiming, datamining en data-analyse.",
+    "date10":"09/2025 - Aanwezig",
+    "experience11":"Kaaf Creativa - Machine learning training",
+    "experience11_text":
+          "Leren en meer ervaring opdoen in machine learning en deep learning.",
+    "date11":"07/2025 - 09/2025",
 
   // Fähigkeiten
   "skills-title-page": "Yossef Essam - Fähigkeiten",
