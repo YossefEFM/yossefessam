@@ -64,6 +64,12 @@ const translations = {
     "experience9": "Bank Miser - Summer Training",
     "experience9_text": "Completed a comprehensive summer training program, learning about banking operations and financial data analysis.",
     "date9": "12/2021 - 08/2022",
+    "experience10":"El Shorouk City Development Authority - Systems and Information Engineer",
+    "experience10_text":
+          "Working in Regulation Management. Responsible for Data Entry, data cleaning, data mining and data analysis.",
+    "experience11":"Kaaf Creativa - Machine learning Training",
+    "experience11_text":
+          "Learning and get more experience in machine learning and deep learning.",
 
     // Skills Page
     "skills-title-page": "Yossef Essam - Skills",
@@ -167,6 +173,12 @@ const translations = {
   "experience9": "بنك مصر - تدريب صيفي",
   "experience9_text": "أكملت برنامج تدريب صيفي شامل وتعلمت عن العمليات المصرفية وتحليل البيانات المالية.",
   "date9": "12/2021 - 08/2022",
+  "experience10":"جهاز تنمية مدينة الشروق - مهندس نظم و معلومات",
+    "experience10_text":
+          "أعمل في إدارة التقنين. مسؤول عن إدخال البيانات، وتنظيف البيانات، واستخراج البيانات، وتحليل البيانات.",
+    "experience11":"Kaaf Creativa - تدريب على تعلم الاله ",
+    "experience11_text":
+          "تعلّم واكتسب المزيد من الخبرة في تعلم الآلة والتعلم العميق.",
 
   // صفحة المهارات
   "skills-title-page": "يوسف عصام - المهارات",
