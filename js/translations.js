@@ -31,6 +31,12 @@ const translations = {
 
     // Experience Page
     "experience-title": "Experience",
+    "experience10":"El Shorouk City Development Authority - Systems and Information Engineer",
+    "experience11_text":
+          "Working in Regulation Management. Responsible for Data Entry, data cleaning, data mining and data analysis.",
+    "experience10":"Kaaf Creativa - Machine learning Training",
+    "experience11_text":
+          "Learning and get more experience in machine learning and deep learning.",
     "experience1": "Roaya Group - Web Developer",
     "experience1_text": "Developed websites using PHP, Laravel, WordPress, and HTML. Managed a software team and coordinated projects, overseeing UI/UX developers, graphic designers, and content creators.",
     "date1": "04/2024 - Present",
