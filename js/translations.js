@@ -2,7 +2,7 @@ const translations = {
   en: {
     // Home Page
     "hero-title": "Hi, I'm <span class='highlight'>Yossef Essam</span>",
-    "hero-subtitle": "A Data Analyst",
+    "hero-subtitle": "Machine learning engineer",
     "hero-cta": "Check Out My Work",
 
     // Navigation
@@ -76,6 +76,7 @@ const translations = {
     // Skills Page
     "skills-title-page": "Yossef Essam - Skills",
     "skills-title": "Skills",
+  
     "data-analysis": "Data Analysis: Power BI, Excel, Data Visualization",
     "machine-learning": "Machine Learning: AI, Deep Learning, Numpy, Pytorch",
     "other-skills": "Other Skills: OOP, Algorithms, Data Structures, Statistics",
@@ -119,7 +120,7 @@ const translations = {
   ar: {
   // الصفحة الرئيسية
   "hero-title": "مرحباً، أنا <span class='highlight'>يوسف عصام</span>",
-  "hero-subtitle": "محلل بيانات",
+  "hero-subtitle": "مهندس تعلم الاله ",
   "hero-cta": "اطلع على أعمالي",
 
   // التنقل
