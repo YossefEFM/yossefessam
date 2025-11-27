@@ -230,7 +230,7 @@ const translations = {
 ar: {
   // الصفحة الرئيسية
   "hero-title": "مرحباً، أنا <span class='highlight'>يوسف عصام</span>",
-  "hero-subtitle": "محلل بيانات",
+  "hero-subtitle": " مهندس تعلم الاله",
   "hero-cta": "اطلع على أعمالي",
 
   // التنقل
