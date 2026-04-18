@@ -2,7 +2,7 @@ const translations = {
   en: {
     // Home Page
     "hero-title": "Hi, I'm <span class='highlight'>Yossef Essam</span>",
-    "hero-subtitle": "Machine learning engineer",
+    "hero-subtitle": "Data Analyst",
     "hero-cta": "Check Out My Work",
 
     // Navigation
@@ -120,7 +120,7 @@ const translations = {
   ar: {
   // الصفحة الرئيسية
   "hero-title": "مرحباً، أنا <span class='highlight'>يوسف عصام</span>",
-  "hero-subtitle": "مهندس تعلم الاله ",
+  "hero-subtitle": " محلل بيانات ",
   "hero-cta": "اطلع على أعمالي",
 
   // التنقل
